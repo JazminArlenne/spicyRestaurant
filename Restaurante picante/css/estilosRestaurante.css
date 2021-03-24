@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Verdana"; 
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+ }
+
+ .titulo{
+     font-size: 30px;
+     color:coral;
+     text-align: center;
+ }
+
+/*header*/
+.lado-izquierdo > a{
+    color: rgb(255, 125, 19);
+    font-weight: 300;
+    font-family: 'Lucida Sans Unicode';
+    text-decoration: none;
+    margin-left: 10px;
+    padding-right: 13px;   
+}
+
+.lado-izquierdo > a:hover{
+    text-decoration: underline;
+}
+
+.lado-derecho > a{
+    text-align: right;
+    color: rgb(255, 125, 19);
+    font-weight: 300;
+    font-family: 'Lucida Sans Unicode';
+    text-decoration: none;
+    margin-right: 10px;
+    padding-right: 13px;
+}
+
+.segundo-header{
+    width: 100%;
+    height: 400px;
+    background: #093147e7 url(../img/picante.jpg);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f56117be, #0b486bdc) url(../img/picante.jpg); 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f56117be, #0b486bdc) url(../img/picante.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.menu-principal{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.menu-principal > a{
+    color: orangered;
+    font-weight: 300;
+    font-family: 'Lucida Sans Unicode';
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.menu-principal > a:hover{
+    text-decoration: underline;
+}
+
+.wave{
+    padding-top: 150px;
+    margin-bottom: 50px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    width: auto;
+}
+
+.primer-header{
+    color: orange;
+    background-color: rgb(53, 52, 52);
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texto-segundo-header{
+    font-family: "Great Vibes";
+    font-size: 60px;
+    margin-left: 18px;
+    margin-top: 5px;
+    position: relative; 
+}
+
+/*Main*/
+
+.contenedor-algunos-platos{
+    background-color: black;   
+}
+
+.titulo-algunos-platos{
+    font-family: 'Caveat';
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+    padding-top: 120px; 
+}
+
+.imagenes-algunos-platos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagenes-platos{
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.imagenes-platos > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(46, 46, 46, 0.89);
+    position: relative;
+}
+
+.texto-imagenes-algunos-platos > h3{
+    color: rgb(255, 225, 168);
+    font-family: 'Lucida Sans Unicode';
+    font-size: 15px;
+}
+
+.texto-imagenes-algunos-platos > p{
+    color:aliceblue;
+    font-size: 10px;
+    font-family: 'Lucida Sans';
+}
+
+/*reservas*/
+
+.contenedor-reservas{
+    background-color: rgb(12, 12, 12); 
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.reservas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.reservas > img{
+    width: 65%;
+    height: 100%;
+    object-fit: fill;
+    margin-right: 0%;
+    
+
+}
+
+.contenido-textos-reservas{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.textoh3-reserva{
+    color: orangered;
+    font-weight: 500;
+    font-family: 'Caveat';
+    font-size: 35px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    
+}
+
+.textoa-reserva{
+    color: aliceblue;
+    font-weight: 300;
+    font-family: 'Lucida Sans Unicode';
+    text-decoration: none;
+    margin-right: 10px;
+    font: lighter;
+}
+
+.textoa-reserva:hover{
+    text-decoration: salmon;
+    text-decoration: underline;
+}
+
+.reservas > a:hover{
+    text-decoration: underline;
+}
+
+/*resenas*/
+
+.titulo-resena-clientes{
+    background-color: black;
+    padding-top: 80px;
+}
+
+.titulo-resena-clientes > h2{
+    font-family: 'caveat';
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.bloques-de-clientes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bloque-por-cliente{
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.bloque-por-cliente > img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 200px;
+    box-shadow: 0 0 6px 0 rgba(46, 46, 46, 0.89);
+    position: relative;
+    
+}
+
+.contenido-texto-bloque > h4{
+    color:rgb(255, 225, 168);
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Lucia Sans Unicode';
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.contenido-texto-bloque > p{
+    color:white;
+    text-align: justify;
+    text-align: center;
+    font-family: 'verdana';
+    font-size: 10px;
+    text-decoration: none;
+    margin-right: 10px; 
+}
+
+/*footer*/
+
+.informacion{
+    background-color: rgb(255, 69, 0);
+    margin-top: 0px;
+    padding-bottom: 20px;
+}
+.wave-final{
+    padding-bottom: 100px;
+    margin-top: 0px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+
+.bloques-informacion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-us > h2{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'caveat';
+    font-size: 40px;
+}
+
+.menu-contenido-about-us > a{
+    margin-top: 5px;
+    color:black;
+    text-decoration: none ;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 14px; 
+}
+
+.menu-contenido-about-us > a:hover{
+    text-decoration: underline;
+}
+
+.location > h2{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'caveat';
+    font-size: 40px;  
+}
+
+.contenido-location > p{
+    margin-top: 7px;
+    font-family: 'Lucida Sans Unicode';
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contenido-location > a{
+    font-family: 'Lucida Sans Unicode';
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color:blanchedalmond;
+    font-weight: bold;
+}
+
+.contenido-location > a:hover{
+    text-decoration: underline;
+}
+
+.contacto > h2{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'caveat';
+    font-size: 40px;
+}
+
+.contenido-contacto{
+    margin-top: 7px;
+    text-align: left;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 14px;
+}
+
+.logo-company{
+    align-content: center;
+}
+
+.logo-company > img{
+    width: 50%;
+    height: 53%;
+    margin-left: 80px;
+    padding-right: 0;
+    align-self : center;
+    margin-top: 0px;
+}
+
+.logo-company > h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Great Vibes'; 
+}
