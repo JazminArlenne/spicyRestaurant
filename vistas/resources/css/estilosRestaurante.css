@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: "Verdana";  
+    font-family: "Verdana"; 
 }
 
 .contenedor{
@@ -23,17 +23,17 @@ body{
  }
 
 /*header*/
-.lado-izquierdo > a{
-    color: rgb(255, 125, 19);
-    font-weight: 300;
+.link a{
+    color: rgb(255, 125, 19) !important;
     font-family: 'Lucida Sans Unicode';
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 0px;
     padding-right: 13px;   
 }
 
-.lado-izquierdo > a:hover{
-    text-decoration: underline;
+.lado-izquierdo a:hover{
+    color: #ffff !important;
+    
 }
 
 .lado-derecho > a{
@@ -47,16 +47,6 @@ body{
 }
 
 .segundo-header{
-    width: 100%;
-    height: 400px;
-    background: #093147e7 url(../img/picante.jpg);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f56117be, #0b486bdc) url(../img/picante.jpg); 
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f56117be, #0b486bdc) url(../img/picante.jpg); 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
 }
 
 .menu-principal{
@@ -76,10 +66,10 @@ body{
     text-decoration: underline;
 }
 
-.wave{
-    padding-top: 150px;
-    margin-bottom: 50px;
-    height: 250px;
+.waves{
+    padding-top: 100px;
+    margin-bottom: 100px;
+    height: 100px !important;
     overflow: hidden;
     position: relative;
     bottom: 0;
@@ -92,7 +82,7 @@ body{
     font-weight: bold;
     padding-bottom: 5px;
     display: flex;
-    justify-content: space-evenly;
+
 }
 
 .texto-segundo-header{
