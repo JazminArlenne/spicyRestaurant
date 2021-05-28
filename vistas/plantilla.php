@@ -28,7 +28,7 @@
                                 <a class="nav-link active" aria-current="page" href="/spicyRestaurant">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.php?pagina=ingreso">Menu</a>
+                                <a class="nav-link" aria-current="page" href="index.php?pagina=registro">Menu</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Order</a>
@@ -71,11 +71,15 @@
                         if(isset($_GET["pagina"])){
 
                         if ($_GET["pagina"] == "registro" ||
+                                $_GET["pagina"] == "principal" ||
                                 $_GET["pagina"] == "ingreso" ||
                                 $_GET["pagina"] == "iniciar" ||
                                 $_GET["pagina"] == "salir") {
 
                                 include "paginas/".$_GET["pagina"].".php";
+                        }
+                        else{
+                            include "paginas/error404.php";
                         }
 
                 }else{

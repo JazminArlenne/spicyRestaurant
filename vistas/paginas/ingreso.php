@@ -34,22 +34,31 @@
     ==================-->
     <div class="container-fluid">
 
-        <div class="container rounded text-white">
-            <form class="mt-5">
+        <div class="container rounded d-flex justify-content-center text-center">
+            <form class="mt-4 p-4 bg-light rounded" method="post">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="">
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control w-50" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Contrasena</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <input type="password" class="form-control " id="exampleInputPassword1" name="">    
+                    </div>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Entrar</button>
             </form> 
         </div>    	
     </div>

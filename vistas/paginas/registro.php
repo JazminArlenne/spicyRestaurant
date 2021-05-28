@@ -25,29 +25,74 @@
 
 	</div>
 
-
-
 	<!--=================
-	Inicio
+	registro
 	==================-->
-	<div class="container-fluid text-white">
+	<div class="container-fluid ">
 
-		<div class="container pt-5">
-			<form>
+		<div class="d-flex justify-content-center text-center mt-5">
+
+			<form class="p-4 bg-light rounded" method="post">
 				<div class="mb-3">
-					<label for="exampleInputEmail1" class="form-label">Email address</label>
-					<input type="email" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					<label for="nombre" class="form-label">Nombre</label>
+					
+					<div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                        	<i class="fas fa-user"></i> 	
+                        </span>
+                        
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="nombre" name="registroNombre">
+                    </div>
+
 				</div>
 				<div class="mb-3">
-					<label for="exampleInputPassword1" class="form-label">Password</label>
-					<input type="password" class="form-control w-50" id="exampleInputPassword1">
+					<label for="email" class="form-label">Email</label>
+
+					<div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                        	<i class="fas fa-envelope"></i>
+                        </span>
+						
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" name="registroEmail">
+                        
+                    </div>
+
+				</div>
+				<div class="mb-3">
+					<label for="pwd" class="form-label">Contrasena</label>
+
+					<div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                        	<i class="fas fa-lock"></i>
+                        </span>
+						
+						<input type="password" class="form-control" id="exampleInputPassword1" name="registroPassword">
+                    </div>
 				</div>
 				<div class="mb-3 form-check">
 					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1">Check me out</label>
+					<label class="form-check-label" for="exampleCheck1">Acepto las politicas de privacidad</label>
 				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
+
+				<?php 
+					$registro = controladorFormularios::ctrRegistro();
+					/*
+					
+					echo $registro;*/
+
+					if($registro == "ok"){
+						echo '<script>
+							if (window.history.replaceState){
+								window.history.replaceState(null, null, window.location.href);
+							}
+						</script>';
+
+						echo '<div class="alert alert-success">El usuario ha sido registrado</div>';
+					}
+				
+				?>
+
+				<button type="submit" class="btn btn-primary">Registrarse</button>
 			</form>
 		</div>    	
 	</div>
