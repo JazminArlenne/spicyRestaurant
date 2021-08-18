@@ -5,8 +5,76 @@
 }
 
 body{
-    font-family: "Verdana"; 
+    font-family: "Verdana";
+    -webkit-font-smoothing: antialiased 
 }
+
+
+
+body:after {
+  content: '';
+  display: flex;
+  clear: both;
+}
+
+
+
+
+a, a > span {
+  position: relative !important;
+  text-decoration: none  !important;
+  line-height: 24px  !important;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: '' !important;
+  position: absolute !important;
+  transition: transform .5s ease  !important;
+}
+
+.nav-item{
+    background-color: black !important;;
+}
+.hover-3 {
+
+  display: inline-flex;
+
+  overflow: hidden;
+}
+.hover-3:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: orange;
+  transform: translateX(-100%);
+}
+.hover-3:hover:before {
+  transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Info seccion 1*/
 .info{

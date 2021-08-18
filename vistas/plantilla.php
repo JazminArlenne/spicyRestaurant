@@ -46,20 +46,21 @@ session_start();
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav contenido-menu">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/spicyRestaurant">Inicio</a>
+                                <a class="nav-link active hover-3" aria-current="page" href="/spicyRestaurant">Inicio</a>
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.php?pagina=menu">Menu</a>
+                                <a class="nav-link hover-3" aria-current="page" href="index.php?pagina=menu">Menu</a>
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php?pagina=reservacion">Reservacion</a>
+                                <a class="nav-link hover-3" href="index.php?pagina=reservacion">Reservacion</a>
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.php?pagina=registro">Cuenta</a>
+                                <a class="nav-link hover-3" href="index.php?pagina=registro">Cuenta</a>
                             </li>
+
 
 
                         </ul>
@@ -70,6 +71,7 @@ session_start();
                     </div>
                 </div>
             </nav>
+            
         </section>
 
 
