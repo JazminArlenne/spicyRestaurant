@@ -80,7 +80,34 @@ class controladorFormularios{
 		}
 	}
 
+	/*=========================================
+		eliminar Registros
+	===========================================*/
 
+	public function ctrEliminarRegistro(){
+		if (isset($_GET["id"])) {
+			
+
+			$tabla = "registros";
+
+			$datos = array("id" => $_GET["id"] );
+
+
+			$respuesta = modeloFormularios::mdlEliminarRegistros($tabla, $datos);
+
+			if($respuesta == "ok"){
+				echo '<script>
+							if (window.history.replaceState){
+								window.history.replaceState(null, null, window.location.href);
+							}
+						</script>';
+
+				echo '<script> window.location = "index.php?pagina=iniciar"; </script>';
+			}
+
+			return $respuesta;
+		}
+	}
 
 
 	/*=========================================

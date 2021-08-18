@@ -95,6 +95,31 @@ Class modeloFormularios{
 
 		$stmt = null;
 	}	
+
+	/*=========================================
+		Eliminar Registros
+	===========================================*/
+
+	static public function mdlEliminarRegistros($tabla, $datos){
+
+		$stmt = conexion::conectar()->prepare("DELETE FROM $tabla WHERE id =:id");
+
+		#binparam()
+
+		$stmt->bindParam(":id", $datos["id"], PDO::PARAM_STR);
+
+		if ($stmt->execute()){
+			return "ok";
+
+		}else{
+			print_r(conexion::conectar()->errorInfo());
+
+		}
+
+		$stmt->close();
+
+		$stmt = null;
+	}	
 }
 
 /*$conexion = conexion::conectar();

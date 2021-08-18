@@ -9,7 +9,6 @@ if (isset($_GET['id'])){
 				
 ?>
 
- 
 
 <section class="pb-5 " style="background: black;">
 	<h2 class="titulo-algunos-platos">| Editar usuario</h2>
@@ -17,10 +16,9 @@ if (isset($_GET['id'])){
 		<a class="btn btn-outline-danger btn-lg ml-5" href="index.php?pagina=iniciar" style="float: right; margin-right: 94px;">volver</a>
 
 	
-
-	<!--=================
+<!--=================
 	registro
-	==================-->
+==================-->
 	<div class="container-fluid ">
 
 		<div class="d-flex justify-content-center text-center mt-5">

@@ -97,6 +97,7 @@ session_start();
                         if ($_GET["pagina"] == "registro" ||
                                 $_GET["pagina"] == "principal" ||
                                 $_GET["pagina"] == "menu" ||
+                                $_GET["pagina"] == "eliminar" ||
                                 $_GET["pagina"] == "reservacion" ||
                                 $_GET["pagina"] == "ingreso" ||
                                 $_GET["pagina"] == "iniciar" ||

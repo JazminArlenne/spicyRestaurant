@@ -1,3 +1,14 @@
+<?php
+	
+	if(isset($_SESSION["validarIngreso"])){
+
+        echo '<script> window.location = "index.php?pagina=iniciar"; </script>';
+        
+        return;
+}
+
+?>
+
 
 <section class="pb-5 " style="background: black;">
 	<h2 class="titulo-algunos-platos">| Registrate</h2>
