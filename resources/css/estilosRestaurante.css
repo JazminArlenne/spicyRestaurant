@@ -10,8 +10,8 @@ body{
 
 /*Info seccion 1*/
 .info{
-    position: relative;
-    padding-top: 10px;
+    position: relative; 
+    padding-top: 3px;
     padding-bottom: ;
     color: #ffff;
     background-color: #2e2e2e;    
@@ -27,7 +27,7 @@ body{
 .info-derecho{
     position: absolute;
     right: 18px;
-    top: 10px;
+    top: 3px;
     botton: 0px;
 }
 
@@ -185,11 +185,12 @@ body{
 }
 
 .titulo-algunos-platos{
-    font-family: 'Caveat';
-    font-size: 40px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 35px;
     color: orange;
-    text-align: center;
-    padding-top: 120px; 
+    text-align: ;
+    margin-left: 5%;
+    padding-top: 30px; 
 }
 
 .imagenes-algunos-platos{
@@ -199,20 +200,13 @@ body{
 }
 
 .imagenes-platos{
-    width: 20%;
-    margin-right: 10px;
-    margin-bottom: 100px;
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 0px !important;
+    margin-bottom: 50px;
     margin-top: 50px;
 }
-.imagenes-platos > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(46, 46, 46, 0.89);
-    position: relative;
-}
+
 
 .texto-imagenes-algunos-platos > h3{
     color: rgb(255, 225, 168);
@@ -230,26 +224,30 @@ body{
 
 .contenedor-reservas{
     background-color: rgb(12, 12, 12); 
-    padding-right: 0;
-    margin-right: 0;
-}
 
-.reservas{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+}
+.texto-reserva{
+    margin-top: 70px;
+    padding-top: 10%;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 3px 2px 5px black;
+}
+.reserva{
+    opacity: 0.9;
 }
 
 .reservas > img{
-    width: 65%;
+    width: 100%;
     height: 100%;
-    object-fit: fill;
-    margin-right: 0%;
+
     
 
 }
 
 .contenido-textos-reservas{
+    background-color: rgb(0, 0, 0, );
     margin-top: 200px;
     text-align: center;
 }
@@ -260,7 +258,6 @@ body{
     font-family: 'Caveat';
     font-size: 35px;
     text-decoration: none;
-    margin-right: 10px;
     font-weight: bold;
     
 }
@@ -291,10 +288,10 @@ body{
 }
 
 .titulo-resena-clientes > h2{
-    font-family: 'caveat';
+    font-family: 'Lucida Sans Unicode';
+    margin-left: 5%;
     font-size: 40px;
     color: orange;
-    text-align: center;
     background-color: black;
     padding-bottom: 30px;
 }

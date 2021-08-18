@@ -21,11 +21,11 @@ session_start();
     <header>
         <section class="container-fluid info">
             <div class="info-direccion float-left">
-                <p><span class=""><i class="fas fa-map-marker-alt"></i></span> C/Santa Luna Esq. 27 feb, Santo Domingo</p>
+                <small class="text-muted"><span class=""><i class="fas fa-map-marker-alt"></i></span> C/Santa Luna Esq. 27 feb, Santo Domingo</small>
             </div>
 
             <div class="info-derecho float-right">
-                <p><span class="info-telefono"><i class="fas fa-phone-alt"></i> 809-55-1111 </span> <span class="info-horario"><i class="far fa-clock"></i> 9:00 am - 10:00 pm</span></p>          
+                <small class="text-muted"><span class="info-telefono"><i class="fas fa-phone-alt"></i> 809-55-1111   |</span> <span class="info-horario"><i class="far fa-clock"></i> 9:00 am - 10:00 pm</span></small>       
             </div>
         </section>
 
@@ -50,15 +50,15 @@ session_start();
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.php?pagina=registro">Menu</a>
+                                <a class="nav-link" aria-current="page" href="index.php?pagina=menu">Menu</a>
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Order</a>
+                                <a class="nav-link" href="index.php?pagina=reservacion">Reservacion</a>
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Reservacion</a>
+                                <a class="nav-link" href="index.php?pagina=registro">Cuenta</a>
                             </li>
 
 
@@ -96,6 +96,8 @@ session_start();
 
                         if ($_GET["pagina"] == "registro" ||
                                 $_GET["pagina"] == "principal" ||
+                                $_GET["pagina"] == "menu" ||
+                                $_GET["pagina"] == "reservacion" ||
                                 $_GET["pagina"] == "ingreso" ||
                                 $_GET["pagina"] == "iniciar" ||
                                 $_GET["pagina"] == "editar" ||
@@ -114,7 +116,7 @@ session_start();
 
         ?>
 
-    <footer class="informacion text-light">
+    <footer class="container-fluid m-0 p-0 informacion text-light">
 
             <div class="wave-final"><svg viewBox="0 0 500 150" preserveAspectRatio="none" 
                 ><path d="M0.00,49.98 C206.26,154.44 290.34,-13.31 505.36,71.53 L500.00,0.00 L0.00,0.00 Z"
@@ -125,7 +127,7 @@ session_start();
                     <div class="col-sm">
                     <img src="resources/img/logobig.png" width="80%" height="40%" style="border-radius:10px ;">
 
-                    <div class="footer-info contenedor-footer">
+                    <div class="footer-info rounded contenedor-footer">
                         <p><span>Direccion:</span></p>
                         <p>C/santa Luna #23 Santo Domingo</p>
                         <p><span>Telefono:</span> 809-555-1111</p>
@@ -178,9 +180,9 @@ session_start();
 
                 </div>
             </div>
-            <section class="container-fluid credit "> 
+            <section class="container-fluid"> 
                 <hr>
-                <div class="container text-center">
+                <div class="container text-center pb-2">
                     <p ><span><i class="fab fa-creative-commons"></i></span> 2021 - Spicy Restaurant - Jazmin Moron | Politica de Privacidad </p>
                 </div>
             </section>
