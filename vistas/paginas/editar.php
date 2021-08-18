@@ -11,31 +11,12 @@ if (isset($_GET['id'])){
 
  
 
-<section class="mt-5 pb-5 " style="background: black;">
-	<div class="container-fluid pt-5 justify-content-center">
-		<h2 class="text-center mt-3 pt-4 mb-4 pb-4 text-white">Editar</h2>
-	</div>
+<section class="pb-5 " style="background: black;">
+	<h2 class="titulo-algunos-platos">| Editar usuario</h2>
 
-	<div class="container-fluid">
-		<div class="container">
-			<ul class="nav nav-justified py-2 nav-pills">
+		<a class="btn btn-outline-danger btn-lg ml-5" href="index.php?pagina=iniciar" style="float: right; margin-right: 94px;">volver</a>
 
-				<li class="nav-item">
-					<a class="nav-link active" href="index.php?pagina=registro">Registro</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=ingreso">Ingreso</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=iniciar">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="index.php?pagina=salir">Salir</a>
-				</li>
-			</ul>
-		</div>
-
-	</div>
+	
 
 	<!--=================
 	registro

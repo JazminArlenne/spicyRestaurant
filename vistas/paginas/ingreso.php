@@ -1,25 +1,19 @@
-<section class="mt-5 pb-5" style="background: black;">
+<section class="pb-5" style="background: black;">
 
-    <div class="container-fluid pt-5 justify-content-center">
-        <h2 class="text-center mt-2 pt-4 mb-4 pb-4 text-white">Ingreso</h2>
-    </div>
+    <h2 class="titulo-algunos-platos">| Iniciar Sesion</h2>
 
-    <div class="container-fluid">
+
+    <div class="container-fluid mt-5">
         <div class="container">
             <ul class="nav nav-justified py-2 nav-pills">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?pagina=registro">Registro</a>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="index.php?pagina=registro">Registro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.php?pagina=ingreso">Ingreso</a>
+                    <a class="nav-link bg-warning text-dark" href="index.php?pagina=ingreso">Ingreso</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?pagina=iniciar">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?pagina=salir">Salir</a>
-                </li>
+                
 
             </ul>
 
@@ -70,7 +64,7 @@
 
                 ?>
 
-                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button type="submit" class="btn btn-warning">Entrar</button>
             </form> 
         </div>    	
     </div>
