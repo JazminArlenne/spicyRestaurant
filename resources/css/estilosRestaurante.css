@@ -6,7 +6,7 @@
 
 body{
     font-family: "Verdana";
-    -webkit-font-smoothing: antialiased 
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -80,7 +80,6 @@ a:before, a:after, a > span:before, a > span:after {
 .info{
     position: relative; 
     padding-top: 3px;
-    padding-bottom: ;
     color: #ffff;
     background-color: #2e2e2e;    
 }
@@ -96,7 +95,7 @@ a:before, a:after, a > span:before, a > span:after {
     position: absolute;
     right: 18px;
     top: 3px;
-    botton: 0px;
+    
 }
 
 /*Logo seccion 2*/
@@ -256,7 +255,6 @@ a:before, a:after, a > span:before, a > span:after {
     font-family: 'Lucida Sans Unicode';
     font-size: 35px;
     color: orange;
-    text-align: ;
     margin-left: 5%;
     padding-top: 30px; 
 }
@@ -545,3 +543,17 @@ a:before, a:after, a > span:before, a > span:after {
     font-size: 45px;
     font-family: 'Great Vibes'; 
 }
+
+
+
+
+/*Pruebaa neumorphisim*/
+
+.neo{
+    border-style: none;
+    border-radius: 29px;
+    background: #2b2626;
+    box-shadow: inset 8px 8px 13px #181515,
+                inset -8px -8px 13px #3e3737;
+}
+
