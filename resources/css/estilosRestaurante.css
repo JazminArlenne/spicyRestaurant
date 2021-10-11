@@ -5,9 +5,144 @@
 }
 
 body{
-    font-family: "Verdana"; 
+    font-family: "Verdana";
+    -webkit-font-smoothing: antialiased;
 }
 
+
+
+body:after {
+  content: '';
+  display: flex;
+  clear: both;
+}
+
+
+
+
+a, a > span {
+  position: relative !important;
+  text-decoration: none  !important;
+  line-height: 24px  !important;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: '' !important;
+  position: absolute !important;
+  transition: transform .5s ease  !important;
+}
+
+.nav-item{
+    background-color: black !important;;
+}
+.hover-3 {
+
+  display: inline-flex;
+
+  overflow: hidden;
+}
+.hover-3:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: orange;
+  transform: translateX(-100%);
+}
+.hover-3:hover:before {
+  transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Info seccion 1*/
+.info{
+    position: relative; 
+    padding-top: 3px;
+    color: #ffff;
+    background-color: #2e2e2e;    
+}
+
+.info-izquierdo {
+    position: absolute;
+    left: 18px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.info-derecho{
+    position: absolute;
+    right: 18px;
+    top: 3px;
+    
+}
+
+/*Logo seccion 2*/
+.logobig img{
+    top: 0px;
+    width: 30%;
+    height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.menu{
+    background-color: black!important;
+}
+
+ .contenido-menu{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    font-size: 18px !important;
+ }
+
+ .contenido-menu li{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 6px;
+    margin-right: 20px !important;
+ }
+
+ .contenido-menu li:hover{
+    background-color:  #2e2e2e;
+
+ }
+
+.separador-menu:hover{
+    background-color: black !important;
+
+}
+
+ .contenido-menu span{
+    font-size: 24px;
+ }
+
+
+/*---------------------
+---Estilos antiguos
+----------------------*/
 .contenedor{
     padding: 60px 0;
     width: 90%;
@@ -16,13 +151,15 @@ body{
 
  }
 
+ /*header*/
  .titulo{
      font-size: 30px;
      color:coral;
      text-align: center;
  }
 
-/*header*/
+
+
 .lado-izquierdo > a{
     color: rgb(255, 125, 19);
     font-weight: 300;
@@ -97,8 +234,9 @@ body{
 
 .texto-segundo-header{
     font-family: "Great Vibes";
-    margin-left: 18px;
+    margin-left: 50px;
     position: relative; 
+    color: black;
 }
 
 .texto-segundo-header h1{
@@ -114,11 +252,11 @@ body{
 }
 
 .titulo-algunos-platos{
-    font-family: 'Caveat';
-    font-size: 40px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 35px;
     color: orange;
-    text-align: center;
-    padding-top: 120px; 
+    margin-left: 5%;
+    padding-top: 30px; 
 }
 
 .imagenes-algunos-platos{
@@ -128,20 +266,13 @@ body{
 }
 
 .imagenes-platos{
-    width: 20%;
-    margin-right: 10px;
-    margin-bottom: 100px;
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 0px !important;
+    margin-bottom: 50px;
     margin-top: 50px;
 }
-.imagenes-platos > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(46, 46, 46, 0.89);
-    position: relative;
-}
+
 
 .texto-imagenes-algunos-platos > h3{
     color: rgb(255, 225, 168);
@@ -159,26 +290,30 @@ body{
 
 .contenedor-reservas{
     background-color: rgb(12, 12, 12); 
-    padding-right: 0;
-    margin-right: 0;
-}
 
-.reservas{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+}
+.texto-reserva{
+    margin-top: 70px;
+    padding-top: 10%;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 3px 2px 5px black;
+}
+.reserva{
+    opacity: 0.9;
 }
 
 .reservas > img{
-    width: 65%;
+    width: 100%;
     height: 100%;
-    object-fit: fill;
-    margin-right: 0%;
+
     
 
 }
 
 .contenido-textos-reservas{
+    background-color: rgb(0, 0, 0, );
     margin-top: 200px;
     text-align: center;
 }
@@ -189,7 +324,6 @@ body{
     font-family: 'Caveat';
     font-size: 35px;
     text-decoration: none;
-    margin-right: 10px;
     font-weight: bold;
     
 }
@@ -220,10 +354,10 @@ body{
 }
 
 .titulo-resena-clientes > h2{
-    font-family: 'caveat';
+    font-family: 'Lucida Sans Unicode';
+    margin-left: 5%;
     font-size: 40px;
     color: orange;
-    text-align: center;
     background-color: black;
     padding-bottom: 30px;
 }
@@ -276,9 +410,10 @@ body{
 /*footer*/
 
 .informacion{
-    background-color: rgb(255, 69, 0);
+    background-color:  #2e2e2e;
     margin-top: 0px;
     padding-bottom: 20px;
+
 }
 .wave-final{
     padding-bottom: 100px;
@@ -288,6 +423,38 @@ body{
     position: relative;
     top: 0;
     width: auto;
+}
+
+.contenido-footer{
+    margin-left: 30px !important;
+    padding-bottom: 30px;
+}
+
+.contenedor-footer{
+    border-width: 0.5px;
+    border-left-style: groove;
+    border-color: white;
+    color: white;
+}
+
+
+.contenedor-footer label{
+    margin-top: 8px;
+}
+
+.footer-info{
+    margin-left: 20px !important;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.footer-info p{
+    margin: 0px !important;
+    padding: 0px;
+
+}
+.footer-info span{
+    font-weight: bold;
 }
 
 .bloques-informacion{
@@ -376,3 +543,17 @@ body{
     font-size: 45px;
     font-family: 'Great Vibes'; 
 }
+
+
+
+
+/*Pruebaa neumorphisim*/
+
+.neo{
+    border-style: none;
+    border-radius: 29px;
+    background: #2b2626;
+    box-shadow: inset 8px 8px 13px #181515,
+                inset -8px -8px 13px #3e3737;
+}
+
