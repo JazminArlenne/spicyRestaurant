@@ -23,11 +23,6 @@ body{
  }
 
 /*header*/
-
-.logobig img{
-    width: 30%;
-    height: 30%;
-}
 .link a{
     color: rgb(255, 125, 19) !important;
     font-family: 'Lucida Sans Unicode';
@@ -124,7 +119,7 @@ body{
     margin-bottom: 100px;
     margin-top: 50px;
 }
-.imagenes-platos img{
+.imagenes-platos > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
