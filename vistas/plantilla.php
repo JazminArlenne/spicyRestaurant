@@ -83,7 +83,7 @@ session_start();
             <!--<h1 class="pt-3 mb-5">Spicy Restaurant</h1>-->
         </div>
 
-        <div class="wave" style=""><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.09,49.83 C219.66,160.36 351.77,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
+        <div class="wave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.09,49.83 C219.66,160.36 351.77,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
 
     </section>
     </header>

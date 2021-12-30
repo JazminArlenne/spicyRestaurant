@@ -11,12 +11,6 @@
             
         </div>
 
-
-
-
-
-
-
         <h2 class="titulo-algunos-platos">| Ensaladas y entrantes</h2>
 
         <div class="container mt-5 mb-5">
