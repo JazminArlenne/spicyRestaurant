@@ -19,15 +19,7 @@ session_start();
 
 <body style="background: black!important;">
     <header>
-        <section class="container-fluid info">
-            <div class="info-direccion float-left">
-                <small class="text-muted"><span class=""><i class="fas fa-map-marker-alt"></i></span> C/Santa Luna Esq. 27 feb, Santo Domingo</small>
-            </div>
-
-            <div class="info-derecho float-right">
-                <small class="text-muted"><span class="info-telefono"><i class="fas fa-phone-alt"></i> 809-55-1111   |</span> <span class="info-horario"><i class="far fa-clock"></i> 9:00 am - 10:00 pm</span></small>       
-            </div>
-        </section>
+        
 
         <!--Menu principal-->
         <section>
@@ -46,7 +38,7 @@ session_start();
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav contenido-menu">
                             <li class="nav-item">
-                                <a class="nav-link active hover-3" aria-current="page" href="/spicyRestaurant">Inicio</a>
+                                <a class="nav-link active hover-3" aria-current="page" href="/">Inicio</a>
                             </li>
                             <li class="separador-menu"><span>|</span></li>
                             <li class="nav-item">

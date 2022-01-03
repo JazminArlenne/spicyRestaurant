@@ -32,12 +32,11 @@ class controladorFormularios{
 		Seleccionar Registros
 	===========================================*/
  
-	static public function ctrSeleccionarRegistros($item, $valor){
+	static public function ctrSeleccionarRegistros($id=NULL){
 
-		$tabla = "registros";
-
-		$respuesta = modeloFormularios::mdlSeleccionarRegistros($tabla, $item, $valor);
-
+		$valor = $id;
+		$respuesta = modeloFormularios::mdlSeleccionarRegistros($valor);
+	
 		return $respuesta;
 	}
 
@@ -117,39 +116,40 @@ class controladorFormularios{
 	public function ctrIngreso(){
 
 		if(isset($_POST['ingresoEmail'])){
-
-			$tabla = "registros";
-			$item = "email";
-			$valor = $_POST["ingresoEmail"];
-
-
-			$respuesta = modeloFormularios::mdlSeleccionarRegistros($tabla, $item, $valor);
-
-
-			if($respuesta["email"] == $_POST["ingresoEmail"] && $respuesta["password"] == $_POST["ingresoPassword"]){
-
-
-				$_SESSION["validarIngreso"] = "ok";
-
-
-				echo '<script>
-							if (window.history.replaceState){
-								window.history.replaceState(null, null, window.location.href);
-							}
-
-							window.location = "index.php?pagina=iniciar";
-						</script>';
 	
+			$email = $_POST["ingresoEmail"];
+
+			$respuesta = modeloFormularios::mdlIngreso($email);
+
+			if($respuesta){
+
+				if($respuesta["email"] == $_POST["ingresoEmail"] && $respuesta["password"] == $_POST["ingresoPassword"]){
+				
+
+					$_SESSION["validarIngreso"] = "ok";
+	
+	
+					echo '<script>
+								if (window.history.replaceState){
+									window.history.replaceState(null, null, window.location.href);
+								}
+	
+								window.location = "index.php?pagina=iniciar";
+							</script>';
+		
+				}else{
+					echo '<script>
+								if (window.history.replaceState){
+									window.history.replaceState(null, null, window.location.href);
+								}
+							</script>';
+	
+					echo '<div class="alert alert-warning">Usuario o contrasena no valido</div>';
+	
+	
+				}
 			}else{
-				echo '<script>
-							if (window.history.replaceState){
-								window.history.replaceState(null, null, window.location.href);
-							}
-						</script>';
-
-				echo '<div class="alert alert-warning">Usuario o contrasena no valido</div>';
-
-
+				echo '<div class="alert alert-warning">Ups! algo va mal.</div>';
 			}
 		}
 	}

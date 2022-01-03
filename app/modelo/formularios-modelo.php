@@ -7,7 +7,7 @@ require_once "conexion.php";
 
 Class modeloFormularios{
  
-
+	
 	static public function mdlRegistro($tabla, $datos){
 		#statement = declaracion
 		$stmt = conexion::conectar()->prepare("INSERT INTO $tabla(nombre, email, password) VALUES(:nombre, :email, :password)");
@@ -37,29 +37,65 @@ Class modeloFormularios{
 		Seleccionar Registros
 	===========================================*/
 
-	static public function mdlSeleccionarRegistros($tabla, $item, $valor){
+	static public function mdlSeleccionarRegistros($id=null){
+		
+		$tabla = "registros";
+		
+		$consulta = "select * from $tabla ORDER BY id DESC";
+		$stmt = conexion::conectar()->prepare($consulta);
 
-		if($item == null && $valor == null){
+		if(!empty($id)){
+			$consulta = "select * from $tabla where id = :id ORDER BY id DESC";
+			$stmt = conexion::conectar()->prepare($consulta);
 
-			$stmt = conexion::conectar()->prepare("SELECT *, date_format(fecha, '%d/%m/%Y') AS fecha FROM $tabla ORDER BY id DESC");
+			$stmt->bindParam(":id", $id, PDO::PARAM_INT);
+		
+			if ($stmt->execute()){
+				$respuesta = $stmt->fetch();
+				return $respuesta;
+
+			}else{
+				print_r(conexion::conectar()->errorInfo());
+
+			}
 
 			$stmt->execute();
+			$respuesta = $stmt->fetchAll();
+			
+			return $respuesta;
+		}else{
+		
+			$stmt->execute();
+			$respuesta = $stmt->fetchAll();
+			
+			return $respuesta;
+		}
+		
+		$stmt->close();
 
-			return $stmt->fetchAll();
+		$stmt = null;
 
+	}	
+
+	
+	static public function mdlIngreso($email){
+		
+		$tabla = "registros";
+
+		$consulta = "select * from $tabla where email = :email order by id DESC";
+		$stmt = conexion::conectar()->prepare($consulta);
+
+		$stmt->bindParam(":email", $email, PDO::PARAM_STR);
+		
+		if ($stmt->execute()){
+			$respuesta = $stmt->fetch();
+			return $respuesta;
 
 		}else{
-			$stmt = conexion::conectar()->prepare("SELECT *, date_format(fecha, '%d/%m/%Y') AS fecha FROM $tabla WHERE $item = :$item ORDER BY id DESC");
+			print_r(conexion::conectar()->errorInfo());
 
-			$stmt->bindParam(":".$item, $valor, PDO::PARAM_STR);
-
-
-			$stmt ->execute();
-
-			return $stmt -> fetch();
 		}
 
-		
 		$stmt->close();
 
 		$stmt = null;

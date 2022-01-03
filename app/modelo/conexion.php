@@ -6,7 +6,7 @@ class conexion{
 
 		#PDO("nombre del servidor, Nombre de la base de datos", "nombre adm","contrasena")
 
-		$link = new PDO("mysql:host=localhost;dbname=spicy-usuarios", "jazmin", "1234");
+		$link = new PDO("mysql:host=localhost;dbname=spicy-usuarios", "root", "");
 
 		$link->exec("set names utf8");
 

@@ -2,9 +2,8 @@
 
 if (isset($_GET['id'])){
 
-	$item = "id";
-	$valor = $_GET['id'];
-	$usuario = controladorFormularios::ctrSeleccionarRegistros($item, $valor);
+	$id = $_GET['id'];
+	$usuario = controladorFormularios::ctrSeleccionarRegistros($id);
 }					
 				
 ?>
