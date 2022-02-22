@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-body{
+p{
     font-family: "Verdana";
     -webkit-font-smoothing: antialiased;
 }
 
-
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Shrikhand', cursive !important;
+}
 
 body:after {
   content: '';
@@ -17,7 +19,12 @@ body:after {
   clear: both;
 }
 
-
+button{
+    color: white;
+    border-color: white;
+    padding: 10px;
+    background-color: #d10000;
+}
 
 
 a, a > span {
@@ -35,9 +42,7 @@ a:before, a:after, a > span:before, a > span:after {
     background-color: black !important;;
 }
 .hover-3 {
-
   display: inline-flex;
-
   overflow: hidden;
 }
 .hover-3:before {
@@ -51,29 +56,6 @@ a:before, a:after, a > span:before, a > span:after {
 .hover-3:hover:before {
   transform: translateX(0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Info seccion 1*/
@@ -139,6 +121,134 @@ a:before, a:after, a > span:before, a > span:after {
     font-size: 24px;
  }
 
+.s-menu{
+    text-align: center;
+    color: white;
+    
+}
+
+.s-menu h2{
+    font-size: 35px;
+}
+
+.s-menu button{
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.s-menuc{
+    background-color: #d10000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative; 
+    height: 28.1em; 
+    margin-left: 12%;
+    margin-bottom: 0px;
+    
+}
+.s-menucc{
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 10%;
+}
+
+.s-menu p{
+    font-size:20px;
+}
+
+.s-menuD{
+    background-image: url('/resources/img/jalapenos.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    position: relative; 
+    height: 29em; 
+    margin-left: 2%;
+    margin-bottom: 0px;
+    
+}
+
+.s-menuD:hover{
+    transform: scale(1.02);
+}
+
+.n-menu1{
+    background-image: url('/resources/img/entrante.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative; 
+    margin-left: 1%;
+    height: 20.1em;
+
+}
+.n-menu2{
+    background-image: url('/resources/img/ensalada1.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative; 
+    margin-left: 1%;
+    height: 20.1em;
+
+}
+.n-menu3{
+    background-image: url('/resources/img/entrante1.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative; 
+    margin-left: 1%;
+    height: 20.1em;
+
+}
+
+.n-menu4{
+    background-image: url('/resources/img/entrante2.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative; 
+    margin-left: 1%;
+    height: 20.1em;
+
+}
+
+.n-menu5{
+    background-image: url('/resources/img/entrante3.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative; 
+    margin-left: 2%;
+    height: 20.1em;
+}
+
+.n-menu1:hover{
+    transform: scale(1.02);
+}
+
+.n-menu2:hover{
+    transform: scale(1.02);
+}
+
+.n-menu3:hover{
+    transform: scale(1.02);
+}
+
+.n-menu4:hover{
+    transform: scale(1.02);
+}
+
+.n-menu5:hover{
+    transform: scale(1.02);
+}
+
+.n-menu{
+    margin-left: 12%;
+}
+
+
+
+
+
+
+
+
 
 /*---------------------
 ---Estilos antiguos
@@ -186,10 +296,10 @@ a:before, a:after, a > span:before, a > span:after {
 .segundo-header{
     width: 100%;
     height: 300px;
-    background: #093147e7 url(../resources/img/picante.jpg);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f56117be, #0b486bdc) url(../resources/img/picante.jpg); 
+    background: #093147e7 url(/resources/img/picante.jpg);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f56117be, #0b486bdc) url(/resources/img/picante.jpg); 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f56117be, #0b486bdc) url(../resources/img/picante.jpg); 
+    background: linear-gradient(to right, #f56117be, #0b486bdc) url(/resources/img/picante.jpg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     background-size: cover;
@@ -302,16 +412,73 @@ a:before, a:after, a > span:before, a > span:after {
 }
 .reserva{
     opacity: 0.9;
+    
+    
+}
+
+.reserva h2{
+    color: red;
+    font-family: 'Special Elite', cursive!important;
+    font-weight: bold;
+    font-size: 3.2em;
+}
+
+.reserva h5, p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+    font-weight: normal!important;
+}
+
+.reserva h5{
+    font-weight: bold!important;
+    font-size: 1.4em;
+    color: rgb(181, 6, 44);
+}
+
+.reserva p{
+    font-size: 1em;
+    font-weight: bold!important;
+    color: rgb(181, 6, 44);
+    
+
+}
+
+.reserva button{
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.2em;
+    background-color: white;
+    color: rgb(181, 6, 44);
+    border-color: rgb(181, 6, 44);
+    
+}
+
+.reserva button:hover{
+    color: white;
+    border-color: white;
+    background-color: rgb(181, 6, 44);
 }
 
 .reservas > img{
     width: 100%;
     height: 100%;
-
-    
-
 }
 
+.reserva-box{
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+.reserva-box a{
+    text-decoration: none;
+    font-size: 1.4em;
+    color:rgb(181, 6, 44);
+}
+
+.reserva-info{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
 .contenido-textos-reservas{
     background-color: rgb(0, 0, 0, );
     margin-top: 200px;
@@ -426,7 +593,7 @@ a:before, a:after, a > span:before, a > span:after {
 }
 
 .contenido-footer{
-    margin-left: 30px !important;
+    margin-left: 7%!important;
     padding-bottom: 30px;
 }
 

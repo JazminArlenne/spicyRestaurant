@@ -1,20 +1,6 @@
 <?php
 
-
-require_once "controllador/plantilla-controllador.php";
-require_once "controllador/formularios-controllador.php";
-
-require_once "modelo/formularios-modelo.php";
-
-
-
-
-$plantilla = new ControladorPlantilla();
-$plantilla -> ctrTraerPlantilla();
-
-
-
-
+require_once "config.php";
 
 /*
 $ruta = new controladorRuta();

@@ -1,10 +1,15 @@
 <link rel="shortcut icon" href="resources/img/logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="resources/css/estilosRestaurante.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Caveat&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
 <!--Fontawesome script-->
 <script src="https://kit.fontawesome.com/4b84c24836.js" crossorigin="anonymous"></script>

@@ -14,8 +14,7 @@ if(!isset($_SESSION["validarIngreso"])){
         }
 }
 
-
-$usuarios = controladorFormularios::ctrSeleccionarRegistros(null, null);
+$usuarios = controladorFormularios::ctrSeleccionarRegistros();
 /*echo '<pre>';print_r($usuarios); echo '</pre>';*/
 
 ?>
